@@ -79,7 +79,7 @@ section h2 {
 
 /* Style each project item */
 figure {
-    width: 48%; /* Adjust width as needed to fit two items side by side */
+    width: 40%; /* Adjust width as needed to fit two items side by side */
     background-color: #ffffff; /* Off-white background color */
     padding: 40px;
     margin: 20px 0;
