@@ -1,0 +1,130 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a font family and size to all titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Change the color to your preference */
+    margin-bottom: 10px;
+}
+
+/* Style the header */
+header {
+    text-align: center;
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 20px;
+}
+
+/* Style the navigation */
+nav {
+    background-color: #e0e0e0; /* Lighter gray background color */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+/* Style the sections */
+section {
+    background-color: #f9f9f9; /* Off-white background color */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+   
+  
+}
+
+/* Style the section titles */
+section h2 {
+    font-size: 20px;
+    color: #333; /* Dark gray color */
+    margin-bottom: 10px;
+}
+
+
+/* Style the work items */
+/* Style the work container as a flex container */
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.work-container figure {
+    flex: 1 1 25%; /* Set a default width for all items */
+    margin: 10px;
+    text-align: center;
+}
+
+.work-container figure:nth-child(1) {
+    flex: 1 1 75%; /* Make the first item (Project 1) twice as wide as the others */
+}
+
+/* Style each project item */
+figure {
+    width: 48%; /* Adjust width as needed to fit two items side by side */
+    background-color: #ffffff; /* Off-white background color */
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+figure h3 {
+    font-size: 18px;
+    color: #333; /* Dark gray color */
+    margin-top: 10px;
+}
+
+figure p {
+    color: #666; /* Light gray color */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.about {
+    
+    /* CSS styles for elements with the 'about' class */
+}
+
+.work {
+    /* CSS styles for elements with the 'work' class */
+}
+
+.contact {
+    /* CSS styles for elements with the 'contact' class */
+}
+
+.about, .work, .contact {
+    scroll-margin-top: 100px; /* Adjust as needed to offset the scroll position */
+}
+
+@media screen and (max-width: 768px) {
+    .work-container {
+        justify-content: flex-start; /* Change justify-content for smaller screens */
+    }
+
+    .work-container figure {
+        flex: 1 1 100%;
+    }
+}
+
