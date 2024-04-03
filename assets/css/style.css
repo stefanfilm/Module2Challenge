@@ -24,12 +24,13 @@ header {
 nav {
     background-color: #e0e0e0; /* Lighter gray background color */
     padding: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
 }
 
 nav li {
@@ -42,8 +43,7 @@ section {
     padding: 20px;
     margin: 20px 0;
     border-radius: 5px;
-   
-  
+    display: flex;
 }
 
 /* Style the section titles */
@@ -51,8 +51,9 @@ section h2 {
     font-size: 20px;
     color: #333; /* Dark gray color */
     margin-bottom: 10px;
+    display: flex;
+   
 }
-
 
 /* Style the work items */
 /* Style the work container as a flex container */
@@ -63,13 +64,17 @@ section h2 {
 }
 
 .work-container figure {
-    flex: 1 1 25%; /* Set a default width for all items */
-    margin: 10px;
-    text-align: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border: 2px solid black;
+    padding:20px;
+    margin: 20px 0;
+    border-radius: 5px;
 }
 
 .work-container figure:nth-child(1) {
-    flex: 1 1 75%; /* Make the first item (Project 1) twice as wide as the others */
+    width: 95%; /* Make the first item (Project 1) twice as wide as the others */
+    height: 200px;
 }
 
 /* Style each project item */
@@ -102,16 +107,41 @@ html {
 }
 
 .about {
-    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* CSS styles for elements with the 'about' class */
+}
+
+.about p {
+    align-items: center;
+    margin-left: 100px;
     /* CSS styles for elements with the 'about' class */
 }
 
 .work {
+    justify-content: start;
+    align-items: center;
+    /* CSS styles for elements with the 'work' class */
+}
+
+.work p {
+    margin-left: 100px;
     /* CSS styles for elements with the 'work' class */
 }
 
 .contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     /* CSS styles for elements with the 'contact' class */
+}
+
+.contact p {
+        align-items: center;
+        margin-left: 100px;
+        /* CSS styles for elements with the 'about' class */
+    
 }
 
 .about, .work, .contact {
@@ -119,12 +149,8 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-    .work-container {
-        justify-content: flex-start; /* Change justify-content for smaller screens */
-    }
-
     .work-container figure {
-        flex: 1 1 100%;
+        width: 100%;
     }
 }
 
