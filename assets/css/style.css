@@ -119,6 +119,10 @@ html {
     /* CSS styles for elements with the 'about' class */
 }
 
+.banner {
+background-image: url("https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+}
 .work {
     justify-content: start;
     align-items: center;
@@ -142,6 +146,11 @@ html {
         margin-left: 100px;
         /* CSS styles for elements with the 'about' class */
     
+}
+
+.project1 {
+    background-image: url("https://images.unsplash.com/photo-1545164415-0fae860defbd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TEVEfGVufDB8fDB8fHww");
+
 }
 
 .about, .work, .contact {
