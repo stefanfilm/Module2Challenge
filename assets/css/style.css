@@ -77,6 +77,8 @@ section h2 {
     height: 200px;
 }
 
+
+
 /* Style each project item */
 figure {
     width: 40%; /* Adjust width as needed to fit two items side by side */
@@ -98,12 +100,12 @@ figure h3 {
     margin-top: 10px;
 }
 
-figure p {
-    color: #666; /* Light gray color */
-}
-
 html {
     scroll-behavior: smooth;
+}
+
+figcaption h2{
+color: white;
 }
 
 .about {
@@ -149,7 +151,254 @@ background-image: url("https://images.unsplash.com/photo-1574717024653-61fd2cf4d
 }
 
 .project1 {
+    position: relative;
     background-image: url("https://images.unsplash.com/photo-1545164415-0fae860defbd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TEVEfGVufDB8fDB8fHww");
+    color: white;
+    display: block;
+    text-decoration: none;
+    opacity: .8;
+}
+
+.image-containter{ 
+    background-image: url("https://images.unsplash.com/photo-1545164415-0fae860defbd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TEVEfGVufDB8fDB8fHww");
+    background-size: cover;
+    position: relative;
+    opacity: 0.3;
+}
+
+.image-container a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure the link is clickable */
+}
+
+.image-container:hover a {
+    opacity: 1;
+}
+
+.project1 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+    color: white;
+    text-decoration: none;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition on hover */
+}
+
+.project1:hover a {
+    opacity: 1; /* Show the link on hover */
+}
+
+.project2 {
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1512807286015-d57feef7f28f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fGZpbG1tYWtpbmd8ZW58MHx8MHx8fDA%3D");
+    color: white;
+    display: block;
+    text-decoration: none;
+    opacity: .8;
+}
+
+.image-containter2{ 
+    background-image: url("https://images.unsplash.com/photo-1545164415-0fae860defbd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TEVEfGVufDB8fDB8fHww");
+    background-size: cover;
+    position: relative;
+    opacity: 0.3;
+}
+
+.image-container2 a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure the link is clickable */
+}
+
+.image-container2:hover a {
+    opacity: 1;
+}
+
+.project2 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+    color: white;
+    text-decoration: none;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition on hover */
+}
+
+.project2:hover a {
+    opacity: 1; /* Show the link on hover */
+}
+
+.project3 {
+    position: relative;
+    background-image: url("https://plus.unsplash.com/premium_photo-1661843598966-c7a65f138555?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHNvdW5kJTIwZGVzaWdufGVufDB8fDB8fHww");
+    color: white;
+    display: block;
+    text-decoration: none;
+    opacity: .8;
+}
+
+.image-containter3{ 
+    background-image: url("https://plus.unsplash.com/premium_photo-1661843598966-c7a65f138555?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHNvdW5kJTIwZGVzaWdufGVufDB8fDB8fHww");
+    background-size: cover;
+    position: relative;
+    opacity: 0.3;
+}
+
+.image-container3 a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure the link is clickable */
+}
+
+.image-container3:hover a {
+    opacity: 1;
+}
+
+.project3 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+    color: white;
+    text-decoration: none;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition on hover */
+}
+
+.project3:hover a {
+    opacity: 1; /* Show the link on hover */
+}
+
+.project4 {
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1509235296665-1fce97de9a2e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW1heHxlbnwwfHwwfHx8MA%3D%3D");
+    color: white;
+    display: block;
+    text-decoration: none;
+    opacity: .8;
+}
+
+.image-containter4{ 
+    background-image: url("https://images.unsplash.com/photo-1509235296665-1fce97de9a2e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW1heHxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+    position: relative;
+    opacity: 0.3;
+}
+
+.image-container4 a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure the link is clickable */
+}
+
+.image-container4:hover a {
+    opacity: 1;
+}
+
+.project4 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+    color: white;
+    text-decoration: none;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition on hover */
+}
+
+.project4:hover a {
+    opacity: 1; /* Show the link on hover */
+}
+
+.project5 {
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1509235296665-1fce97de9a2e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW1heHxlbnwwfHwwfHx8MA%3D%3D");
+    color: white;
+    display: block;
+    text-decoration: none;
+    opacity: .8;
+}
+
+.image-containter5{ 
+    background-image: url("https://images.unsplash.com/photo-1509235296665-1fce97de9a2e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW1heHxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+    position: relative;
+    opacity: 0.3;
+}
+
+.image-container5 a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure the link is clickable */
+}
+
+.image-container5:hover a {
+    opacity: 1;
+}
+
+.project5 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+    color: white;
+    text-decoration: none;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition on hover */
+}
+
+.project5:hover a {
+    opacity: 1; /* Show the link on hover */
+}
+
+
+.description {
+color: white;
+text-shadow: 5px;
 
 }
 
